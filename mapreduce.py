@@ -108,16 +108,41 @@
 # 利用map和reduce编写一个str2float函数，把字符串'123.456'转换成浮点数123.456：
 from functools import reduce
 
-def str2float(s):
-    def fn(x,y):
-        return x*10+y
-    n=s.index('.')
-    s1=list(map(int,[x for x in s[:n]]))
-    s2=list(map(int,[x for x in s[n+1:]]))
-    return reduce(fn,s1)+reduce(fn,s2)/(10**len(s2))#乘幂
+# def str2float(s):
+#     def fn(x,y):
+#         return x*10+y
+#     n=s.index('.')
+#     s1=list(map(int,[x for x in s[:n]]))
+#     s2=list(map(int,[x for x in s[n+1:]]))
+#     return reduce(fn,s1)+reduce(fn,s2)/(10**len(s2))#乘幂
 
-print('str2float(\'123.456\') =', str2float('123.456'))
-if abs(str2float('123.456') - 123.456) < 0.00001:
-    print('测试成功!')
-else:
-    print('测试失败!')
+# print('str2float(\'123.456\') =', str2float('123.456'))
+# if abs(str2float('123.456') - 123.456) < 0.00001:
+#     print('测试成功!')
+# else:
+#     print('测试失败!')
+
+#用filter求素数
+def _odd_iter():
+    n=1
+    while True:
+        n=n+2
+        yield n
+
+def _not_divisible(n):
+    return lambda x:x % n > 0
+
+def primes():
+    yield 2
+    it = _odd_iter()
+    while true：
+        n=next(it)
+        yield n
+        it = filter(_not_divisible(n),it)
+
+for n in primes():
+    if n<1000:
+        print(n)
+    else:
+        break
+
