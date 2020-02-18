@@ -79,7 +79,7 @@ def mysql():
         host='115.28.57.176',
         port=3306,
         user='root',
-        passwd='xinliu2018*',
+        passwd='2018*',
         db='4dx',
         charset='utf8')
     cursor = conn.cursor(cursor=pymysql.cursors.DictCursor)
