@@ -1,3 +1,4 @@
+#mysqlclient
 import mysqldb
 #连接数据库
 conn=mysqldb.connot(
