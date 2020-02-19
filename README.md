@@ -11,7 +11,7 @@
 
 [songqin](https://github.com/gaoyang836/python_text/blob/master/songqin/http.py)
 
-自动化脚本（webIU自动化selenium，sql增删改查，自动化接口requests）
+自动化脚本（webIU自动化selenium，sql增删改查，自动化接口requests，自动化部署paramiko）
 
 [weixin](https://github.com/gaoyang836/python_text/tree/master/weixin)
 
