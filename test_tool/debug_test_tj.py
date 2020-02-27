@@ -39,4 +39,5 @@ def putInfoToDict(fileName):
                 resDict[useId].append(stuDict)
     return(resDict)
 
-print(putInfoToDict(fileDir))
+import pprint
+pprint.pprint(putInfoToDict(fileDir))
