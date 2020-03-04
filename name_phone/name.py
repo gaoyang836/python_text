@@ -6,19 +6,19 @@ def random_name():
                 "黄和穆萧尹姚邵汪祁赵钱孙李周吴郑王毛狄米贝明臧张戴宋茅庞熊纪舒屈项张祝董粱赵钱孙李周吴郑王杜阮季赵钱孙李周吴郑王张张贾路娄江童郭林刁钟徐邱高夏蔡田胡赵钱孙李周吴郑王张凌霍柯赵钱孙李周吴郑王张卢房缪应丁邓郁单杭洪包诸左石崔吉" \
                 "龚程赵钱孙李周吴郑王邢裴陆荣甄赵钱孙李周吴郑王封靳焦车赵张钱孙李周吴郑王侯伊宁仇祖张武刘景詹司韶黎乔双闻姬冉宰牛尚温庄晏瞿茹习向古居赵钱孙李周吴郑王张耿弘文曾关游楚闫"
     # 百家姓中双姓氏
-    firstName2 = "司马上官欧阳夏侯诸葛东方公孙轩辕令狐钟离宇文长孙慕容司徒司官司端木公西拓跋东郭南门南宫"
+    #firstName2 = "司马上官欧阳夏侯诸葛东方公孙轩辕令狐钟离宇文长孙慕容司徒司官司端木公西拓跋东郭南门南宫"
     # 女孩名字
     gname = '秀娟英华慧巧美娜静淑惠珠翠雅芝玉萍红娥玲芬芳燕彩春菊兰凤洁梅琳素云莲真环雪荣爱妹霞香月莺媛艳瑞凡佳嘉琼勤珍贞莉桂娣叶璧璐娅琦晶妍茜秋珊莎锦黛青倩婷姣婉娴瑾颖露瑶怡婵雁蓓纨仪荷丹蓉眉君琴蕊薇菁梦岚苑婕馨瑗琰韵融园艺咏卿聪澜纯毓悦昭冰爽琬茗羽希宁欣飘育滢馥筠柔竹霭凝晓欢霄枫芸菲寒伊亚宜可姬舒影荔枝思丽伟刚勇毅俊峰强军平保东文辉力明永健世广志义兴良海山仁波宁贵福生龙元全国胜学祥才发武新利清飞彬富顺信子杰涛昌成康星光天达安岩中茂进林有坚和彪博诚先敬震振壮会思群豪心邦承乐绍功松善厚庆磊民友裕河哲江超浩亮政谦亨奇固之轮翰朗伯宏言若鸣朋斌梁栋维启克伦翔旭鹏泽晨辰士以建家致树炎德行时泰盛雄琛钧冠策腾楠榕风航弘'
     # 名
     name = '中 笑 贝 凯 歌 易 仁 义 礼 智 信 友 上 都 卡 被 好 无 九 金 玉 忠'
 
     # 5%的机遇生成双数姓氏
-    if random.choice(range(100)) >1:
-        firstName_name = firstName[random.choice(range(len(firstName)))]
-    else:
-        i = random.choice(range(len(firstName2)))
-        firstName_name = firstName2[i:i + 2]
-
+    # if random.choice(range(100)) >1:
+    #     firstName_name = firstName[random.choice(range(len(firstName)))]
+    # else:
+    #     i = random.choice(range(len(firstName2)))
+    #     firstName_name = firstName2[i:i + 2]
+    firstName_name = firstName[random.choice(range(len(firstName)))]
 
     name_1 = ""
     nm=""
