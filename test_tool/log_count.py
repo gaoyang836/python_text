@@ -14,7 +14,7 @@ for line in linesList:
     temp = line.split('\t')
     ftype = temp[0].split('.')[1].strip()
     fsize = int(temp[1].strip())
-    #统计
+    #统计用字典
     if ftype in resList:
         resList[ftype]+= fsize
     else:
@@ -34,9 +34,10 @@ for line in linesList:
 #         resList.append([ftype,fsize])
 
 
-
 '''
 优化:
 统计用字典
 读log文件
 '''
+
+
