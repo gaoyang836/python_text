@@ -1,0 +1,1175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>测试报告</title>
+    <meta name="generator" content="HTMLTestRunner 0.8.2"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    
+<style type="text/css" media="screen">
+body        { font-family: verdana, arial, helvetica, sans-serif; font-size: 80%; }
+table       { font-size: 100%; }
+pre         { }
+
+/* -- heading ---------------------------------------------------------------------- */
+h1 {
+	font-size: 16pt;
+	/*color: gray;*/
+}
+.heading {
+    margin-top: 0ex;
+    margin-bottom: 1ex;
+}
+
+.heading .attribute {
+    margin-top: 1ex;
+    margin-bottom: 0;
+}
+
+.heading .description {
+    margin-top: 4ex;
+    margin-bottom: 6ex;
+}
+
+/* -- css div popup ------------------------------------------------------------------------ */
+a.popup_link {
+}
+
+a.popup_link:hover {
+    color: red;
+}
+
+.popup_window {
+    display: none;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    /*border: solid #627173 1px; */
+    padding: 10px;
+    /*background-color: #E6E6D6; */
+    font-family: "Lucida Console", "Courier New", Courier, monospace;
+    text-align: left;
+    font-size: 8pt;
+    width: 500px;
+}
+
+}
+/* -- report ------------------------------------------------------------------------ */
+#show_detail_line {
+    margin-top: 3ex;
+    margin-bottom: 1ex;
+}
+#result_table {
+    width: 80%;
+    border-collapse: collapse;
+    border: 1px solid #777;
+}
+#header_row {
+    font-weight: bold;
+    font-size:16px;
+    color: #000000;
+    text-align:center;
+    background-color: #feeeed;
+    height:40px;
+}
+#result_table td {
+    border: 1px solid #d94848;
+    padding: 2px;
+}
+#total_row  { font-weight: bold; height:30px; }
+.passClass  { background-color: #a1faa1; height:30px;}
+.failClass  { background-color: #fac3c3; height:30px;}
+.errorClass { background-color: #faeba1; height:30px;}
+.passCase   { color: #a1faa1; }
+.failCase   { color: #fac3c3; font-weight: bold; }
+.errorCase  { color: #faeba1; font-weight: bold; }
+.hiddenRow  { display: none; }
+.testcase   { margin-left: 2em; }
+
+#add by  songqin  fcl  2019-11-26
+
+ 
+
+
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font: inherit;
+    color: inherit;
+}
+button, select {
+    text-transform: none;
+}
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+} 
+
+
+
+.btn-primary {
+    color: #fff;
+    background-color: #597ef7;
+    border-color: #597ef7;
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: #597ef7;
+    border-color: #597ef7;
+}
+
+.btn-primary2 {
+    color: #fff;
+    background-color: #1890ff;
+    border-color: #1890ff;
+}
+.btn-primary2:hover {
+    color: #fff;
+    background-color: #1890ff;
+    border-color: #1890ff;
+}
+
+.btn-danger:hover {
+    color: #fff;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+}
+.btn-danger {
+    color: #fff;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+}
+.btn-success:hover {
+    color: #fff;
+    background-color: #449d44;
+    border-color: #398439;
+}
+.btn-success {
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+}
+
+.btn.focus, .btn:focus, .btn:hover {
+    color: #333;
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+
+.btn_small {
+    display: inline-block;
+    padding: 4px 8px;
+    margin-bottom: 0;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1.22857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+button, html input[type=button], input[type=reset], input[type=submit] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+button, select {
+    text-transform: none;
+}
+button {
+    overflow: visible;
+}
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font: inherit;
+    color: inherit;
+} 
+a{ text-decoration:none} 
+
+
+/* -- ending ---------------------------------------------------------------------- */
+#ending {
+}
+
+</style>
+
+</head>
+<body>
+<script language="javascript" type="text/javascript"><!--
+output_list = Array();
+
+/* level - 0:Summary; 1:Failed; 2:All */
+function showCase(level) {
+    trs = document.getElementsByTagName("tr");
+    for (var i = 0; i < trs.length; i++) {
+        tr = trs[i];
+        id = tr.id;
+        if (id.substr(0,2) == 'ft') {
+            if (level < 1) {
+                tr.className = 'hiddenRow';
+            }
+            else {
+                tr.className = '';
+            }
+        }
+        if (id.substr(0,2) == 'pt') {
+            if (level > 1) {
+                tr.className = '';
+            }
+            else {
+                tr.className = 'hiddenRow';
+            }
+        }
+    }
+}
+
+
+function showClassDetail(cid, count) {
+    var id_list = Array(count);
+    var toHide = 1;
+    for (var i = 0; i < count; i++) {
+        tid0 = 't' + cid.substr(1) + '.' + (i+1);
+        tid = 'f' + tid0;
+        tr = document.getElementById(tid);
+        if (!tr) {
+            tid = 'p' + tid0;
+            tr = document.getElementById(tid);
+        }
+        id_list[i] = tid;
+        if (tr.className) {
+            toHide = 0;
+        }
+    }
+    for (var i = 0; i < count; i++) {
+        tid = id_list[i];
+        if (toHide) {
+            document.getElementById('div_'+tid).style.display = 'none'
+            document.getElementById(tid).className = 'hiddenRow';
+        }
+        else {
+            document.getElementById(tid).className = '';
+        }
+    }
+}
+
+
+function showTestDetail(div_id){
+    var details_div = document.getElementById(div_id)
+    var displayState = details_div.style.display
+    // alert(displayState)
+    if (displayState != 'block' ) {
+        displayState = 'block'
+        details_div.style.display = 'block'
+    }
+    else {
+        details_div.style.display = 'none'
+    }
+}
+
+
+function html_escape(s) {
+    s = s.replace(/&/g,'&amp;');
+    s = s.replace(/</g,'&lt;');
+    s = s.replace(/>/g,'&gt;');
+    return s;
+}
+
+/* obsoleted by detail in <div>
+function showOutput(id, name) {
+    var w = window.open("", //url
+                    name,
+                    "resizable,scrollbars,status,width=800,height=450");
+    d = w.document;
+    d.write("<pre>");
+    d.write(html_escape(output_list[id]));
+    d.write("\n");
+    d.write("<a href='javascript:window.close()'>close</a>\n");
+    d.write("</pre>\n");
+    d.close();
+}
+*/
+--></script>
+
+<div class='heading'>
+<h1>测试报告</h1>
+<p class='attribute'><strong>测试人员:</strong> 高杨</p>
+<p class='attribute'><strong>开始时间:</strong> 2020-03-25 19:32:21</p>
+<p class='attribute'><strong>合计耗时:</strong> 0:00:46.099024</p>
+<p class='attribute'><strong>测试结果:</strong> 通过 40 失败 5</p>
+
+<p class='description'>自动化接口测试报告</p>
+</div>
+
+
+
+<p id='show_detail_line'>
+
+
+<button class="btn btn-primary" onclick="#" type="button" >概要(88.89%)</button>
+
+<button class="btn btn-success" onclick="showCase(0)" type="button" >通过(40)</button>
+
+<button class="btn btn-danger" onclick="showCase(1)" type="button" >失败(5)</button>
+
+<button class="btn btn-primary2" onclick="showCase(2)" type="button" >所有(45)</button>
+
+<!--
+<a href='javascript:showCase(0)'>通过(40)</a>
+<a href='javascript:showCase(1)'>失败(5)</a>
+<a href='javascript:showCase(2)'>所有(45)</a>
+
+-->
+</p>
+<table id='result_table'>
+<colgroup>
+<col align='left' />
+<col align='center' />
+<col align='center' />
+<col align='center' />
+<col align='center' />
+<col align='center' />
+</colgroup>
+<tr id='header_row'>
+    <td>用例集/测试用例</td>
+    <td>总计</td>
+    <td>通过</td>
+    <td>失败</td>
+    <td>错误</td>
+    <td>详细</td>
+</tr>
+
+<tr class='failClass'>
+    <td>demo.other.demo_unittest3.UnittestDemo3</td>
+    <td>45</td>
+    <td>40</td>
+    <td>5</td>
+    <td>0</td>
+    <td>
+     <!--
+        <button onclick="showClassDetail('c1',45)" class="btn btn-success" type="button" 
+            >收起</button>
+       -->
+        <a href="javascript:showClassDetail('c1',45)">&nbsp;&nbsp;收起</a>
+        
+    </td>
+</tr>
+
+<tr id='ft1.1' class='none'>
+    <td class='failCase'><div class='testcase'>test_excel_01___10001____增加课程____所有字段正常填写____正确_返回成功____add______n___name___大学英语___n___desc___大学英语课程___n___display_idx___4__n__n______code__0___________</div></td>
+    <td colspan='5' align='center'>
+
+    <!-- css div popup start -->
+    <!--
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.1')" >
+        失败</a>
+    -->
+     <button class="popup_link btn_small btn-primary2" onclick="showTestDetail('div_ft1.1')" 
+        type="button" >失败&bull;</button> 
+
+    <div id='div_ft1.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.1: Traceback (most recent call last):
+  File "D:\安装\python3.6\lib\site-packages\ddt.py", line 151, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\python\api_test\demo\other\demo_unittest3.py", line 45, in test_excel
+    self.assertEqual(dictBody['retcode'], test['code'], dictBody['reason'])
+AssertionError: 2 != 0 : 同名课程存在
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.2' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_excel_02___10002____增加课程____填写内容和上一条一样____错误_课程名已存在____add______n___name___大学英语___n___desc___大学英语课程___n___display_idx___4__n__n______code__2___________</div></td>
+    
+    <td colspan='5' align='center'  >
+        <button class="popup_link btn_small btn-primary2" onclick="#" 
+            type="button" >通过&nbsp;</button> 
+    </td>
+    
+    
+    <div id='div_pt1.2' class="popup_window">
+      
+    </div>
+    
+</tr>
+
+<tr id='pt1.3' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_excel_03___10003____增加课程____不填写课程名_其他正常填写____报错_缺少课程名____add______n___name______n___desc___大学英语课程___n___display_idx___4__n__n______code__2___________</div></td>
+    
+    <td colspan='5' align='center'  >
+        <button class="popup_link btn_small btn-primary2" onclick="#" 
+            type="button" >通过&nbsp;</button> 
+    </td>
+    
+    
+    <div id='div_pt1.3' class="popup_window">
+      
+    </div>
+    
+</tr>
+
+<tr id='pt1.4' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_excel_04___10004____增加课程____不填写展示次序_其他正常填写____报错_缺少展示次序____add______n___name___大学语文__courseName_____n___desc___大学英语课程___n___display_idx_____n__n______code__2___________</div></td>
+    
+    <td colspan='5' align='center'  >
+        <button class="popup_link btn_small btn-primary2" onclick="#" 
+            type="button" >通过&nbsp;</button> 
+    </td>
+    
+    
+    <div id='div_pt1.4' class="popup_window">
+      
+    </div>
+    
+</tr>
+
+<tr id='ft1.5' class='none'>
+    <td class='failCase'><div class='testcase'>test_excel_05___10005____增加课程____课程名填写20个汉字_其他正常填写____正确_返回成功____add______n___name___大学英语大学英语大学英语大学英语大学英语___n___desc___大学英语课程___n___display_idx___4__n__n______code__0___________</div></td>
+    <td colspan='5' align='center'>
+
+    <!-- css div popup start -->
+    <!--
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.5')" >
+        失败</a>
+    -->
+     <button class="popup_link btn_small btn-primary2" onclick="showTestDetail('div_ft1.5')" 
+        type="button" >失败&bull;</button> 
+
+    <div id='div_ft1.5' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.5').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.5: Traceback (most recent call last):
+  File "D:\安装\python3.6\lib\site-packages\ddt.py", line 151, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\python\api_test\demo\other\demo_unittest3.py", line 45, in test_excel
+    self.assertEqual(dictBody['retcode'], test['code'], dictBody['reason'])
+AssertionError: 2 != 0 : 同名课程存在
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.6' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_excel_06___10006____增加课程____课程名填写21个汉字_其他正常填写____报错_课程名长度太长____add______n___name___我大学英语大学英语大学英语大学英语大学英语___n___desc___大学英语课程___n___display_idx___4__n__n______code__2___________</div></td>
+    
+    <td colspan='5' align='center'  >
+        <button class="popup_link btn_small btn-primary2" onclick="#" 
+            type="button" >通过&nbsp;</button> 
+    </td>
+    
+    
+    <div id='div_pt1.6' class="popup_window">
+      
+    </div>
+    
+</tr>
+
+<tr id='ft1.7' class='none'>
+    <td class='failCase'><div class='testcase'>test_excel_07___10007____增加课程____课程名填写10字以内_其他正常填写____正确_返回成功____add______n___name___大学英语大学英语大学___n___desc___大学英语课程___n___display_idx___4__n__n______code__0___________</div></td>
+    <td colspan='5' align='center'>
+
+    <!-- css div popup start -->
+    <!--
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.7')" >
+        失败</a>
+    -->
+     <button class="popup_link btn_small btn-primary2" onclick="showTestDetail('div_ft1.7')" 
+        type="button" >失败&bull;</button> 
+
+    <div id='div_ft1.7' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.7').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.7: Traceback (most recent call last):
+  File "D:\安装\python3.6\lib\site-packages\ddt.py", line 151, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\python\api_test\demo\other\demo_unittest3.py", line 45, in test_excel
+    self.assertEqual(dictBody['retcode'], test['code'], dictBody['reason'])
+AssertionError: 2 != 0 : 同名课程存在
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.8' class='none'>
+    <td class='failCase'><div class='testcase'>test_excel_08___10008____增加课程____课程名填写1个汉字_其他正常填写____正确_返回成功____add______n___name___大___n___desc___大学英语课程___n___display_idx___4__n__n______code__0___________</div></td>
+    <td colspan='5' align='center'>
+
+    <!-- css div popup start -->
+    <!--
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.8')" >
+        失败</a>
+    -->
+     <button class="popup_link btn_small btn-primary2" onclick="showTestDetail('div_ft1.8')" 
+        type="button" >失败&bull;</button> 
+
+    <div id='div_ft1.8' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.8').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.8: Traceback (most recent call last):
+  File "D:\安装\python3.6\lib\site-packages\ddt.py", line 151, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\python\api_test\demo\other\demo_unittest3.py", line 45, in test_excel
+    self.assertEqual(dictBody['retcode'], test['code'], dictBody['reason'])
+AssertionError: 2 != 0 : 同名课程存在
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.9' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_excel_09___10009____增加课程____展示次序填写999_其他正常填写____正确_返回成功____add______n___name___大学英语__courseName_____n___desc___大学英语课程___n___display_idx___999__n__n______code__0___________</div></td>
+    
+    <td colspan='5' align='center'  >
+        <button class="popup_link btn_small btn-primary2" onclick="#" 
+            type="button" >通过&nbsp;</button> 
+    </td>
+    
+    
+    <div id='div_pt1.9' class="popup_window">
+      
+    </div>
+    
+</tr>
+
+<tr id='pt1.10' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_excel_10___10010____增加课程____展示次序填写1000_其他正常填写____报错_展示次序长度太长____add______n___name___大学英语__courseName_____n___desc___大学英语课程___n___display_idx___1000__n__n______code__2___________</div></td>
+    
+    <td colspan='5' align='center'  >
+        <button class="popup_link btn_small btn-primary2" onclick="#" 
+            type="button" >通过&nbsp;</button> 
+    </td>
+    
+    
+    <div id='div_pt1.10' class="popup_window">
+      
+    </div>
+    
+</tr>
+
+<tr id='pt1.11' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_excel_11___10011____增加课程____展示次序填写500_其他正常填写____正确_返回成功____add______n___name___大学英语__courseName_____n___desc___大学英语课程___n___display_idx___500__n__n______code__0___________</div></td>
+    
+    <td colspan='5' align='center'  >
+        <button class="popup_link btn_small btn-primary2" onclick="#" 
+            type="button" >通过&nbsp;</button> 
+    </td>
+    
+    
+    <div id='div_pt1.11' class="popup_window">
+      
+    </div>
+    
+</tr>
+
+<tr id='pt1.12' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_excel_12___10012____增加课程____展示次序填写0_其他正常填写____正确_返回成功____add______n___name___大学英语__courseName_____n___desc___大学英语课程___n___display_idx___0__n__n______code__0___________</div></td>
+    
+    <td colspan='5' align='center'  >
+        <button class="popup_link btn_small btn-primary2" onclick="#" 
+            type="button" >通过&nbsp;</button> 
+    </td>
+    
+    
+    <div id='div_pt1.12' class="popup_window">
+      
+    </div>
+    
+</tr>
+
+<tr id='pt1.13' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_excel_13___10013____增加课程____展示次序为_1_其他正常填写____报错_展示次序必须为整数____add______n___name___大学英语__courseName_____n___desc___大学英语课程___n___display_idx____1__n__n______code__2___________</div></td>
+    
+    <td colspan='5' align='center'  >
+        <button class="popup_link btn_small btn-primary2" onclick="#" 
+            type="button" >通过&nbsp;</button> 
+    </td>
+    
+    
+    <div id='div_pt1.13' class="popup_window">
+      
+    </div>
+    
+</tr>
+
+<tr id='pt1.14' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_excel_14___10014____增加课程____展示次序为33_3_其他正常填写____报错_展示次序必须为整数____add______n___name___大学英语__courseName_____n___desc___大学英语课程___n___display_idx___33_3__n__n______code__2___________</div></td>
+    
+    <td colspan='5' align='center'  >
+        <button class="popup_link btn_small btn-primary2" onclick="#" 
+            type="button" >通过&nbsp;</button> 
+    </td>
+    
+    
+    <div id='div_pt1.14' class="popup_window">
+      
+    </div>
+    
+</tr>
+
+<tr id='pt1.15' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_excel_15___10015____增加课程____课程名带有特殊字符__其他正常填写____报错_课程名称不能含特殊字符及标点符号____add______n___name___大学_英语___n___desc___大学英语课程___n___display_idx___4__n__n______code__2___________</div></td>
+    
+    <td colspan='5' align='center'  >
+        <button class="popup_link btn_small btn-primary2" onclick="#" 
+            type="button" >通过&nbsp;</button> 
+    </td>
+    
+    
+    <div id='div_pt1.15' class="popup_window">
+      
+    </div>
+    
+</tr>
+
+<tr id='pt1.16' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_excel_16___10016____增加课程____课程名带有特殊字符__其他正常填写____报错_课程名称不能含特殊字符及标点符号____add______n___name___大学_英语___n___desc___大学英语课程___n___display_idx___4__n__n______code__2___________</div></td>
+    
+    <td colspan='5' align='center'  >
+        <button class="popup_link btn_small btn-primary2" onclick="#" 
+            type="button" >通过&nbsp;</button> 
+    </td>
+    
+    
+    <div id='div_pt1.16' class="popup_window">
+      
+    </div>
+    
+</tr>
+
+<tr id='pt1.17' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_excel_17___10017____增加课程____课程名带有特殊字符__其他正常填写____报错_课程名称不能含特殊字符及标点符号____add______n___name___大学_英语___n___desc___大学英语课程___n___display_idx___4__n__n______code__2___________</div></td>
+    
+    <td colspan='5' align='center'  >
+        <button class="popup_link btn_small btn-primary2" onclick="#" 
+            type="button" >通过&nbsp;</button> 
+    </td>
+    
+    
+    <div id='div_pt1.17' class="popup_window">
+      
+    </div>
+    
+</tr>
+
+<tr id='pt1.18' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_excel_18___10018____增加课程____课程名带有标点符号__其他正常填写____报错_课程名称不能含特殊字符及标点符号____add______n___name___大学_英语___n___desc___大学英语课程___n___display_idx___4__n__n______code__2___________</div></td>
+    
+    <td colspan='5' align='center'  >
+        <button class="popup_link btn_small btn-primary2" onclick="#" 
+            type="button" >通过&nbsp;</button> 
+    </td>
+    
+    
+    <div id='div_pt1.18' class="popup_window">
+      
+    </div>
+    
+</tr>
+
+<tr id='pt1.19' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_excel_19___10019____增加课程____课程名带有标点符号__其他正常填写____报错_课程名称不能含特殊字符及标点符号____add______n___name___大学_英语___n___desc___大学英语课程___n___display_idx___4__n__n______code__2___________</div></td>
+    
+    <td colspan='5' align='center'  >
+        <button class="popup_link btn_small btn-primary2" onclick="#" 
+            type="button" >通过&nbsp;</button> 
+    </td>
+    
+    
+    <div id='div_pt1.19' class="popup_window">
+      
+    </div>
+    
+</tr>
+
+<tr id='pt1.20' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_excel_20___10020____增加课程____课程名前面有空格_其他正常填写____报错_课程名称不能含特殊字符及标点符号____add______n___name____大学英语___n___desc___大学英语课程___n___display_idx___4__n__n______code__2___________</div></td>
+    
+    <td colspan='5' align='center'  >
+        <button class="popup_link btn_small btn-primary2" onclick="#" 
+            type="button" >通过&nbsp;</button> 
+    </td>
+    
+    
+    <div id='div_pt1.20' class="popup_window">
+      
+    </div>
+    
+</tr>
+
+<tr id='pt1.21' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_excel_21___10021____增加课程____课程名后面有空格_其他正常填写____报错_课程名称不能含特殊字符及标点符号____add______n___name___大学英语____n___desc___大学英语课程___n___display_idx___4__n__n______code__2___________</div></td>
+    
+    <td colspan='5' align='center'  >
+        <button class="popup_link btn_small btn-primary2" onclick="#" 
+            type="button" >通过&nbsp;</button> 
+    </td>
+    
+    
+    <div id='div_pt1.21' class="popup_window">
+      
+    </div>
+    
+</tr>
+
+<tr id='pt1.22' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_excel_22___10022____增加课程____课程名中间有空格_其他正常填写____报错_课程名称不能含特殊字符及标点符号____add______n___name___大学_英语___n___desc___大学英语课程___n___display_idx___4__n__n______code__2___________</div></td>
+    
+    <td colspan='5' align='center'  >
+        <button class="popup_link btn_small btn-primary2" onclick="#" 
+            type="button" >通过&nbsp;</button> 
+    </td>
+    
+    
+    <div id='div_pt1.22' class="popup_window">
+      
+    </div>
+    
+</tr>
+
+<tr id='pt1.23' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_excel_23___10023____增加课程____展示次序填字母_其他正常填写____报错_展示次序必须为数字____add______n___name___大学英语___n___desc___大学英语课程___n___display_idx___ab__n__n______code__2___________</div></td>
+    
+    <td colspan='5' align='center'  >
+        <button class="popup_link btn_small btn-primary2" onclick="#" 
+            type="button" >通过&nbsp;</button> 
+    </td>
+    
+    
+    <div id='div_pt1.23' class="popup_window">
+      
+    </div>
+    
+</tr>
+
+<tr id='pt1.24' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_excel_24___10024____增加课程____展示次序填字母_数字_其他正常填写____报错_展示次序必须为数字____add______n___name___大学英语___n___desc___大学英语课程___n___display_idx___a4__n__n______code__2___________</div></td>
+    
+    <td colspan='5' align='center'  >
+        <button class="popup_link btn_small btn-primary2" onclick="#" 
+            type="button" >通过&nbsp;</button> 
+    </td>
+    
+    
+    <div id='div_pt1.24' class="popup_window">
+      
+    </div>
+    
+</tr>
+
+<tr id='pt1.25' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_excel_25___10025____增加课程____展示次序填标点符号逗号_其他正常填写____报错_展示次序必须为数字____add______n___name___大学英语___n___desc___大学英语课程___n___display_idx______n__n______code__2___________</div></td>
+    
+    <td colspan='5' align='center'  >
+        <button class="popup_link btn_small btn-primary2" onclick="#" 
+            type="button" >通过&nbsp;</button> 
+    </td>
+    
+    
+    <div id='div_pt1.25' class="popup_window">
+      
+    </div>
+    
+</tr>
+
+<tr id='pt1.26' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_excel_26___10026____删除课程____删除的课程ID为空____报错_课程Id不合法或不存在____delete______id___________code__2___________</div></td>
+    
+    <td colspan='5' align='center'  >
+        <button class="popup_link btn_small btn-primary2" onclick="#" 
+            type="button" >通过&nbsp;</button> 
+    </td>
+    
+    
+    <div id='div_pt1.26' class="popup_window">
+      
+    </div>
+    
+</tr>
+
+<tr id='pt1.27' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_excel_27___10027____删除课程____删除的课程ID为空格____报错_课程Id不合法或不存在____delete______id____________code__2___________</div></td>
+    
+    <td colspan='5' align='center'  >
+        <button class="popup_link btn_small btn-primary2" onclick="#" 
+            type="button" >通过&nbsp;</button> 
+    </td>
+    
+    
+    <div id='div_pt1.27' class="popup_window">
+      
+    </div>
+    
+</tr>
+
+<tr id='pt1.28' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_excel_28___10028____删除课程____删除的课程ID有特殊字符_____报错_课程Id不合法或不存在____delete______id____________code__2___________</div></td>
+    
+    <td colspan='5' align='center'  >
+        <button class="popup_link btn_small btn-primary2" onclick="#" 
+            type="button" >通过&nbsp;</button> 
+    </td>
+    
+    
+    <div id='div_pt1.28' class="popup_window">
+      
+    </div>
+    
+</tr>
+
+<tr id='pt1.29' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_excel_29___10029____删除课程____删除的课程ID有特殊字符_____报错_课程Id不合法或不存在____delete______id____________code__2___________</div></td>
+    
+    <td colspan='5' align='center'  >
+        <button class="popup_link btn_small btn-primary2" onclick="#" 
+            type="button" >通过&nbsp;</button> 
+    </td>
+    
+    
+    <div id='div_pt1.29' class="popup_window">
+      
+    </div>
+    
+</tr>
+
+<tr id='pt1.30' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_excel_30___10030____删除课程____删除的课程ID有特殊字符_____报错_课程Id不合法或不存在____delete______id____________code__2___________</div></td>
+    
+    <td colspan='5' align='center'  >
+        <button class="popup_link btn_small btn-primary2" onclick="#" 
+            type="button" >通过&nbsp;</button> 
+    </td>
+    
+    
+    <div id='div_pt1.30' class="popup_window">
+      
+    </div>
+    
+</tr>
+
+<tr id='pt1.31' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_excel_31___10031____删除课程____删除的课程ID为中文____报错_课程Id不合法或不存在____delete______id___好________code__2___________</div></td>
+    
+    <td colspan='5' align='center'  >
+        <button class="popup_link btn_small btn-primary2" onclick="#" 
+            type="button" >通过&nbsp;</button> 
+    </td>
+    
+    
+    <div id='div_pt1.31' class="popup_window">
+      
+    </div>
+    
+</tr>
+
+<tr id='pt1.32' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_excel_32___10032____删除课程____删除的课程ID为任意数字和字母____报错_课程Id不合法或不存在____delete______id___122abc________code__2___________</div></td>
+    
+    <td colspan='5' align='center'  >
+        <button class="popup_link btn_small btn-primary2" onclick="#" 
+            type="button" >通过&nbsp;</button> 
+    </td>
+    
+    
+    <div id='div_pt1.32' class="popup_window">
+      
+    </div>
+    
+</tr>
+
+<tr id='ft1.33' class='none'>
+    <td class='failCase'><div class='testcase'>test_excel_33___10033____删除课程____删除的课程ID为任意数字____报错_课程Id不合法或不存在____delete______id___123321________code__2___________</div></td>
+    <td colspan='5' align='center'>
+
+    <!-- css div popup start -->
+    <!--
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.33')" >
+        失败</a>
+    -->
+     <button class="popup_link btn_small btn-primary2" onclick="showTestDetail('div_ft1.33')" 
+        type="button" >失败&bull;</button> 
+
+    <div id='div_ft1.33' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.33').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.33: Traceback (most recent call last):
+  File "D:\安装\python3.6\lib\site-packages\ddt.py", line 151, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\python\api_test\demo\other\demo_unittest3.py", line 47, in test_excel
+    self.assertEqual(dictBody['retcode'], test['code'])
+AssertionError: 0 != 2
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.34' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_excel_34___10034____列出课程____页码为1_显示条数为20____正确_返回成功____list______pagenum___1___pagesize___20________code__0___________</div></td>
+    
+    <td colspan='5' align='center'  >
+        <button class="popup_link btn_small btn-primary2" onclick="#" 
+            type="button" >通过&nbsp;</button> 
+    </td>
+    
+    
+    <div id='div_pt1.34' class="popup_window">
+      
+    </div>
+    
+</tr>
+
+<tr id='pt1.35' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_excel_35___10035____列出课程____页码为空_显示条数正常填写____报错_页码不能为空____list______pagenum______pagesize___20________code__2___________</div></td>
+    
+    <td colspan='5' align='center'  >
+        <button class="popup_link btn_small btn-primary2" onclick="#" 
+            type="button" >通过&nbsp;</button> 
+    </td>
+    
+    
+    <div id='div_pt1.35' class="popup_window">
+      
+    </div>
+    
+</tr>
+
+<tr id='pt1.36' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_excel_36___10036____列出课程____页码为1_显示条数为空____报错_显示条数不能为空____list______pagenum___1___pagesize___________code__2___________</div></td>
+    
+    <td colspan='5' align='center'  >
+        <button class="popup_link btn_small btn-primary2" onclick="#" 
+            type="button" >通过&nbsp;</button> 
+    </td>
+    
+    
+    <div id='div_pt1.36' class="popup_window">
+      
+    </div>
+    
+</tr>
+
+<tr id='pt1.37' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_excel_37___10037____列出课程____页码为0_显示条数为20____报错_页码必须大于0____list______pagenum___0___pagesize___20________code__2___________</div></td>
+    
+    <td colspan='5' align='center'  >
+        <button class="popup_link btn_small btn-primary2" onclick="#" 
+            type="button" >通过&nbsp;</button> 
+    </td>
+    
+    
+    <div id='div_pt1.37' class="popup_window">
+      
+    </div>
+    
+</tr>
+
+<tr id='pt1.38' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_excel_38___10038____列出课程____页码为_1_显示条数为20____报错_页码必须大于0____list______pagenum____1___pagesize___20________code__2___________</div></td>
+    
+    <td colspan='5' align='center'  >
+        <button class="popup_link btn_small btn-primary2" onclick="#" 
+            type="button" >通过&nbsp;</button> 
+    </td>
+    
+    
+    <div id='div_pt1.38' class="popup_window">
+      
+    </div>
+    
+</tr>
+
+<tr id='pt1.39' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_excel_39___10039____列出课程____页码为字母_显示条数为20____报错_页码必须大于0____list______pagenum___a___pagesize___20________code__2___________</div></td>
+    
+    <td colspan='5' align='center'  >
+        <button class="popup_link btn_small btn-primary2" onclick="#" 
+            type="button" >通过&nbsp;</button> 
+    </td>
+    
+    
+    <div id='div_pt1.39' class="popup_window">
+      
+    </div>
+    
+</tr>
+
+<tr id='pt1.40' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_excel_40___10040____列出课程____页码为很大的数_显示条数为20____报错_页码超过显示范围____list______pagenum___1000___pagesize___20________code__2___________</div></td>
+    
+    <td colspan='5' align='center'  >
+        <button class="popup_link btn_small btn-primary2" onclick="#" 
+            type="button" >通过&nbsp;</button> 
+    </td>
+    
+    
+    <div id='div_pt1.40' class="popup_window">
+      
+    </div>
+    
+</tr>
+
+<tr id='pt1.41' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_excel_41___10041____列出课程____页码为1_显示条数0____报错_显示条数必须大于0____list______pagenum___1___pagesize___0________code__2___________</div></td>
+    
+    <td colspan='5' align='center'  >
+        <button class="popup_link btn_small btn-primary2" onclick="#" 
+            type="button" >通过&nbsp;</button> 
+    </td>
+    
+    
+    <div id='div_pt1.41' class="popup_window">
+      
+    </div>
+    
+</tr>
+
+<tr id='pt1.42' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_excel_42___10042____列出课程____页码为1_显示条数1____正确_返回成功____list______pagenum___1___pagesize___1________code__0___________</div></td>
+    
+    <td colspan='5' align='center'  >
+        <button class="popup_link btn_small btn-primary2" onclick="#" 
+            type="button" >通过&nbsp;</button> 
+    </td>
+    
+    
+    <div id='div_pt1.42' class="popup_window">
+      
+    </div>
+    
+</tr>
+
+<tr id='pt1.43' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_excel_43___10043____列出课程____页码为1_显示条数500____正确_返回成功____list______pagenum___1___pagesize___500________code__0___________</div></td>
+    
+    <td colspan='5' align='center'  >
+        <button class="popup_link btn_small btn-primary2" onclick="#" 
+            type="button" >通过&nbsp;</button> 
+    </td>
+    
+    
+    <div id='div_pt1.43' class="popup_window">
+      
+    </div>
+    
+</tr>
+
+<tr id='pt1.44' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_excel_44___10044____列出课程____页码为1_显示条数1000____正确_返回成功____list______pagenum___1___pagesize___1000________code__0___________</div></td>
+    
+    <td colspan='5' align='center'  >
+        <button class="popup_link btn_small btn-primary2" onclick="#" 
+            type="button" >通过&nbsp;</button> 
+    </td>
+    
+    
+    <div id='div_pt1.44' class="popup_window">
+      
+    </div>
+    
+</tr>
+
+<tr id='pt1.45' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_excel_45___10045____列出课程____页码为1_显示条数1001____报错_显示条数必须大于0____list______pagenum___1___pagesize___1001________code__2___________</div></td>
+    
+    <td colspan='5' align='center'  >
+        <button class="popup_link btn_small btn-primary2" onclick="#" 
+            type="button" >通过&nbsp;</button> 
+    </td>
+    
+    
+    <div id='div_pt1.45' class="popup_window">
+      
+    </div>
+    
+</tr>
+
+<tr id='total_row'>
+    <td>共</td>
+    <td>45</td>
+    <td>40</td>
+    <td>5</td>
+    <td>0</td>
+    <td>&nbsp;</td>
+</tr>
+</table>
+
+<div id='ending'>&nbsp;</div>
+
+</body>
+</html>
