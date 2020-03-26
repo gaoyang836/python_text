@@ -13,6 +13,9 @@
 
 自动化脚本（webIU自动化selenium，sql增删改查，自动化接口requests，自动化部署paramiko）
 
+[selenium](https://github.com/gaoyang836/python_text/tree/master/selenium)
+webIU自动化selenium 练习
+
 [weixin](https://github.com/gaoyang836/python_text/tree/master/weixin)
 
 练习微信订单查询与自建系统订单状态核对脚本
