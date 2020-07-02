@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.6.5 on win32)" generated="20200622 13:51:59.073" rpa="false">
+<suite id="s1" name="Kw1" source="D:\testPython\test\RF\task3\kw1.robot">
+<test id="s1-t1" name="case1">
+<kw name="checklog3">
+<arguments>
+<arg>2020</arg>
+</arguments>
+<assign>
+<var>${res}</var>
+</assign>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>${expect}</arg>
+</arguments>
+<assign>
+<var>${var}</var>
+</assign>
+<msg timestamp="20200622 13:51:59.114" level="INFO">${var} = 2020</msg>
+<status status="PASS" starttime="20200622 13:51:59.113" endtime="20200622 13:51:59.114"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${var}</arg>
+</arguments>
+<status status="PASS" starttime="20200622 13:51:59.114" endtime="20200622 13:51:59.117"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>$var==$expect</arg>
+</arguments>
+<status status="PASS" starttime="20200622 13:51:59.117" endtime="20200622 13:51:59.126"></status>
+</kw>
+<msg timestamp="20200622 13:51:59.126" level="INFO">${res} = Success</msg>
+<status status="PASS" starttime="20200622 13:51:59.113" endtime="20200622 13:51:59.126"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${res}</arg>
+</arguments>
+<status status="PASS" starttime="20200622 13:51:59.126" endtime="20200622 13:51:59.127"></status>
+</kw>
+<status status="PASS" starttime="20200622 13:51:59.112" endtime="20200622 13:51:59.128" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200622 13:51:59.075" endtime="20200622 13:51:59.129"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Kw1">Kw1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
