@@ -1,6 +1,23 @@
 # python_text
 📖 python练习的代码
 
+
+[Advanced](https://github.com/gaoyang836/python_text/tree/master/Advanced)
+
+python进阶练习
+
+[RF](https://github.com/gaoyang836/python_text/tree/master/RF)
+
+RF框架练习
+
+[api_test](https://github.com/gaoyang836/python_text/tree/master/api_test)
+
+api接口测试练习
+
+[app selenium](https://github.com/gaoyang836/python_text/tree/master/app%20selenium)
+
+app安卓 selenium 练习
+
 [learning_test](https://github.com/gaoyang836/python_text/tree/master/learning_test)
 
 存放廖雪峰python文档学习时的练习脚本
