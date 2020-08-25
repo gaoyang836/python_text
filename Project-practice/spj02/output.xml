@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.6.5 on win32)" generated="20200814 15:18:42.568" rpa="false">
+<suite id="s1" name="Tc" source="D:\a-testPython\spj02\tc">
+<suite id="s1-s1" name="D-空白数据" source="D:\a-testPython\spj02\tc\d-空白数据">
+<suite id="s1-s1-s1" name="D-7年级1班" source="D:\a-testPython\spj02\tc\d-空白数据\d-7年级1班">
+<suite id="s1-s1-s1-s1" name="班级管理" source="D:\a-testPython\spj02\tc\d-空白数据\d-7年级1班\班级管理.robot">
+<test id="s1-s1-s1-s1-t1" name="修改班级1 - tc000051">
+<kw name="Setup" library="C000051" type="setup">
+<msg timestamp="20200814 15:18:42.856" level="INFO">***** step 1 ****  添加 7年级3班 
+
+{'id': 455528, 'invitecode': '4555284216660', 'retcode': 0}</msg>
+<status status="PASS" starttime="20200814 15:18:42.764" endtime="20200814 15:18:42.856"></status>
+</kw>
+<kw name="Steps" library="C000051">
+<msg timestamp="20200814 15:18:43.054" level="INFO">***** step 1 ****  修改班级 7年级4班 
+
+{'retcode': 0}
+
+
+***** step 2 ****  列出班级，检验一下
+
+{ 'gradeid': 1,
+  'retcode': 0,
+  'retlist': [ { 'grade__name': '七年级',
+                 'id': 455528,
+                 'invitecode': '4555284216660',
+                 'name': '4班',
+                 'studentlimit': 40,
+                 'studentnumber': 0,
+                 'teacherlist': []}]}</msg>
+<status status="PASS" starttime="20200814 15:18:42.858" endtime="20200814 15:18:43.054"></status>
+</kw>
+<kw name="Teardown" library="C000051" type="teardown">
+<msg timestamp="20200814 15:18:43.159" level="INFO">{'retcode': 0}</msg>
+<status status="PASS" starttime="20200814 15:18:43.054" endtime="20200814 15:18:43.160"></status>
+</kw>
+<status status="PASS" starttime="20200814 15:18:42.763" endtime="20200814 15:18:43.160" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-s1-t2" name="修改班级2 - tc000052">
+<kw name="Setup" library="C000052" type="setup">
+<msg timestamp="20200814 15:18:43.258" level="INFO">***** step 1 ****  添加 7年级5班 
+
+{'id': 455529, 'invitecode': '4555294919048', 'retcode': 0}</msg>
+<status status="PASS" starttime="20200814 15:18:43.164" endtime="20200814 15:18:43.259"></status>
+</kw>
+<kw name="Steps" library="C000052">
+<msg timestamp="20200814 15:18:43.351" level="INFO">***** step 1 ****  修改班级 7年级5班为1班 
+
+{'retcode': 0}
+{'retcode': 0}</msg>
+<msg timestamp="20200814 15:18:43.352" level="FAIL">返回值不正确</msg>
+<status status="FAIL" starttime="20200814 15:18:43.259" endtime="20200814 15:18:43.352"></status>
+</kw>
+<kw name="Teardown" library="C000052" type="teardown">
+<msg timestamp="20200814 15:18:43.456" level="INFO">{'retcode': 0}</msg>
+<status status="PASS" starttime="20200814 15:18:43.353" endtime="20200814 15:18:43.456"></status>
+</kw>
+<status status="FAIL" starttime="20200814 15:18:43.161" endtime="20200814 15:18:43.457" critical="yes">返回值不正确</status>
+</test>
+<test id="s1-s1-s1-s1-t3" name="修改班级3 - tc0000053">
+<kw name="Setup" library="C000053" type="setup">
+<msg timestamp="20200814 15:18:43.555" level="INFO">***** step 1 ****  添加 7年级7班 
+
+{'id': 455530, 'invitecode': '4555306193601', 'retcode': 0}</msg>
+<status status="PASS" starttime="20200814 15:18:43.459" endtime="20200814 15:18:43.555"></status>
+</kw>
+<kw name="Steps" library="C000053">
+<msg timestamp="20200814 15:18:43.649" level="INFO">***** step 1 ****  修改班级 7年级8班 
+
+{'reason': 'id 为`9999999999999999`的班级不存在', 'retcode': 404}</msg>
+<status status="PASS" starttime="20200814 15:18:43.556" endtime="20200814 15:18:43.649"></status>
+</kw>
+<kw name="Teardown" library="C000053" type="teardown">
+<msg timestamp="20200814 15:18:43.758" level="INFO">{'retcode': 0}</msg>
+<status status="PASS" starttime="20200814 15:18:43.650" endtime="20200814 15:18:43.759"></status>
+</kw>
+<status status="PASS" starttime="20200814 15:18:43.458" endtime="20200814 15:18:43.759" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-s1-t4" name="删除班级1 - tc000081">
+<kw name="Setup" library="C000081" type="setup">
+<status status="PASS" starttime="20200814 15:18:43.762" endtime="20200814 15:18:43.762"></status>
+</kw>
+<kw name="Steps" library="C000081">
+<msg timestamp="20200814 15:18:43.865" level="INFO">***** step 1 ****  删除班级 不存在的id 
+
+{'reason': 'id 为`9999999999999999999999999`的班级不存在', 'retcode': 404}</msg>
+<status status="PASS" starttime="20200814 15:18:43.763" endtime="20200814 15:18:43.865"></status>
+</kw>
+<kw name="Teardown" library="C000081" type="teardown">
+<status status="PASS" starttime="20200814 15:18:43.866" endtime="20200814 15:18:43.866"></status>
+</kw>
+<status status="PASS" starttime="20200814 15:18:43.760" endtime="20200814 15:18:43.866" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-s1-t5" name="删除班级2 - tc000082">
+<kw name="Setup" library="C000082" type="setup">
+<msg timestamp="20200814 15:18:43.962" level="INFO">***** step 1 ****  添加 7年级6班 
+
+{'id': 455531, 'invitecode': '4555310034630', 'retcode': 0}</msg>
+<status status="PASS" starttime="20200814 15:18:43.869" endtime="20200814 15:18:43.962"></status>
+</kw>
+<kw name="Steps" library="C000082">
+<msg timestamp="20200814 15:18:44.064" level="INFO">***** step 1 ****  修改班级 7年级8班 
+
+{'retcode': 0}</msg>
+<status status="PASS" starttime="20200814 15:18:43.963" endtime="20200814 15:18:44.064"></status>
+</kw>
+<kw name="Teardown" library="C000082" type="teardown">
+<status status="PASS" starttime="20200814 15:18:44.065" endtime="20200814 15:18:44.065"></status>
+</kw>
+<status status="PASS" starttime="20200814 15:18:43.868" endtime="20200814 15:18:44.066" critical="yes"></status>
+</test>
+<status status="FAIL" starttime="20200814 15:18:42.616" endtime="20200814 15:18:44.067"></status>
+</suite>
+<status status="FAIL" starttime="20200814 15:18:42.612" endtime="20200814 15:18:44.073"></status>
+</suite>
+<status status="FAIL" starttime="20200814 15:18:42.609" endtime="20200814 15:18:44.077"></status>
+</suite>
+<status status="FAIL" starttime="20200814 15:18:42.570" endtime="20200814 15:18:44.081"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="1">Critical Tests</stat>
+<stat pass="4" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="4" fail="1" id="s1" name="Tc">Tc</stat>
+<stat pass="4" fail="1" id="s1-s1" name="D-空白数据">Tc.D-空白数据</stat>
+<stat pass="4" fail="1" id="s1-s1-s1" name="D-7年级1班">Tc.D-空白数据.D-7年级1班</stat>
+<stat pass="4" fail="1" id="s1-s1-s1-s1" name="班级管理">Tc.D-空白数据.D-7年级1班.班级管理</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
